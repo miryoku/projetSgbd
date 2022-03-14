@@ -135,6 +135,7 @@ public class PlanningService implements IPlanningService {
 		
 	       DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 	       Date date = new Date();
+	       System.out.println(format.format(date));
 	       return peuplePatientForAcceuillant(planningRepository.findForAcceuillanteEntre(id_centre,format.format(date)));
 	}
 
